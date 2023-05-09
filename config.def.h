@@ -9,6 +9,14 @@ static const char unknown_str[] = "n/a";
 /* maximum output string length */
 #define MAXLEN 2048
 
+static const struct arg args[] = {
+	/* function format          argument */
+	{ wifi_essid, "^b#004b72^^c#d4d4d4^ 󰤨 %s ^d^", "wlp4s0" },
+	{ battery_perc, "^b#1c5e8a^^c#d4d4d4^   %s%% ^d^", "BAT0" },
+	{ run_command, "^b#3072a3^^c#d4d4d4^ %s%% ^d^", "pamixer --get-volume" },
+	{ ram_perc, "^b#4387bc^^c#d4d4d4^  %s%% ^d^", NULL },
+	{ datetime, "^b#569cd6^^c#f7f7f7^  %s ", "%d.%m.%y  %H:%M" },
+};
 /*
  * function            description                     argument (example)
  *
@@ -63,7 +71,4 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
-static const struct arg args[] = {
-	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
-};
+
