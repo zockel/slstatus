@@ -10,12 +10,12 @@ static const char unknown_str[] = "n/a";
 #define MAXLEN 2048
 
 static const struct arg args[] = {
-	/* function format          argument */
-	{ wifi_essid, "^b#004b72^^c#d4d4d4^ 󰤨 %s ^d^", "wlp4s0" },
-	{ battery_perc, "^b#1c5e8a^^c#d4d4d4^   %s%% ^d^", "BAT0" },
-	{ run_command, "^b#3072a3^^c#d4d4d4^ %s%% ^d^", "pamixer --get-volume" },
-	{ ram_perc, "^b#4387bc^^c#d4d4d4^  %s%% ^d^", NULL },
-	{ datetime, "^b#569cd6^^c#f7f7f7^  %s ", "%d.%m.%y  %H:%M" },
+	/* function     format                              argument */
+	{ wifi_essid,   "^b#6d3ab5^^c#f7f7f7^ 󰤨 %s ^d^",    "wlp4s0" },
+	{ battery_perc, "^b#7542bd^^c#f7f7f7^   %s%% ^d^", "BAT0" },
+	{ run_command,  "^b#7a48c2^^c#f7f7f7^ %s%% ^d^",    "pamixer --get-volume" },
+	{ ram_perc,     "^b#8452cc^^c#f7f7f7^  %s%% ^d^",   NULL },
+	{ datetime,     "^b#8456c7^^c#f7f7f7^  %s ",        "%d.%m.%y  %H:%M" },
 };
 /*
  * function            description                     argument (example)
