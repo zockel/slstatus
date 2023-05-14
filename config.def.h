@@ -13,8 +13,9 @@ static const struct arg args[] = {
 	/* function     format                              argument */
 	{ wifi_essid,   "^b#6d3ab5^^c#f7f7f7^ 󰤨 %s ^d^",    "wlp4s0" },
 	{ battery_perc, "^b#7542bd^^c#f7f7f7^   %s%% ^d^", "BAT0" },
-	{ run_command,  "^b#7a48c2^^c#f7f7f7^ %s%% ^d^",    "pamixer --get-volume" },
+	{ run_command,  "^b#7a48c2^^c#f7f7f7^ %s%% ^d^",    "pamixer --get-volume" },
 	{ ram_perc,     "^b#8452cc^^c#f7f7f7^  %s%% ^d^",   NULL },
+	{ cpu_perc,     "^b#8452cc^^c#f7f7f7^ 󰻠 %s%% ^d^",   NULL },
 	{ datetime,     "^b#8456c7^^c#f7f7f7^  %s ",        "%d.%m.%y  %H:%M" },
 };
 /*
