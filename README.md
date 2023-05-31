@@ -40,6 +40,8 @@ In order to build slstatus you need the Xlib header files.
   loaded.
 * For volume percentage on FreeBSD, `sndio` must be installed.
 
+In order for the bg and fg color settings to work, you need to apply the
+[status2d](https://dwm.suckless.org/patches/status2d) patch to dwm.
 
 ## Installation
 Edit config.mk to match your local setup (slstatus is installed into the
