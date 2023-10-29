@@ -11,12 +11,12 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function     format                              argument */
-	{ wifi_essid,   "^b#000000^^c#0abdc6^ 󰤨 %s ^d^",    "wlp4s0" },
-	{ battery_perc, "^b#000000^^c#0abdc6^   %s%% ^d^", "BAT0" },
-	{ run_command,  "^b#000000^^c#0abdc6^  %s%% ^d^",    "pamixer --get-volume" },
-	{ ram_perc,     "^b#000000^^c#0abdc6^  %s%% ^d^",   NULL },
-	{ cpu_perc,     "^b#000000^^c#0abdc6^ 󰻠 %s%% ^d^",   NULL },
-	{ datetime,     "^b#000000^^c#0abdc6^  %s ",        "%d.%m.%y  %H:%M" },
+	{ wifi_essid,   "^b#b4befe^^c#1e1e2e^ 󰤨 %s ^d^",    "wlp4s0" },
+	{ battery_perc, "^b#89b4fa^^c#1e1e2e^   %s%% ^d^", "BAT0" },
+	{ run_command,  "^b#74c7ec^^c#1e1e2e^  %s%% ^d^",    "pamixer --get-volume" },
+	{ ram_perc,     "^b#89dceb^^c#1e1e2e^  %s%% ^d^",   NULL },
+	{ cpu_perc,     "^b#89dceb^^c#1e1e2e^ 󰻠 %s%% ^d^",   NULL },
+	{ datetime,     "^b#94e2d5^^c#1e1e2e^  %s ",        "%d.%m.%y  %H:%M" },
 };
 /*
  * function            description                     argument (example)
